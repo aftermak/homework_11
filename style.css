@@ -38,7 +38,7 @@ h1 {
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.button {
+.createEl {
     margin: 30px auto;
     background-color: #4CAF50;
     border: none;
@@ -53,11 +53,11 @@ h1 {
     cursor: pointer;
   }
 
-  .button:hover {
+  .createEl:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
-  .button:active {
+  .createEl:active {
     opacity: 0.5;
   }
   
@@ -72,41 +72,44 @@ h1 {
     margin-right: 25px;
  }
 
- .headingLi {
+ .headingEl {
     color: #34495E ;
     font-size: 20px;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px 20px 20px;
  }
 
-.descriptionLi {
+.descriptionEl {
     color: #34495E;
-    margin-left: 30px;
+    margin-left: 40px;
+    padding-bottom: 20px;
 }
 
  .isDone {
     border-radius: 5px;
  }
 
- .checked {
-    text-decoration: line-through;
- }
-
- /* .delBtn {
-    margin-left: auto;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    padding: 12px 25px;
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
-    font-size: 14px;
-    transition-duration: 0.4s;
-    cursor: pointer;
- } */
-
  .done {
     text-decoration: line-through;
  }
+
+ .deleteBtn {
+    margin: 0px;
+    margin-left: 500px;
+
+    background-color: #f44336;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .deleteBtn:disabled {
+    display: none;
+  }
