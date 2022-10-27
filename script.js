@@ -5,7 +5,6 @@ const toDolist = document.getElementsByClassName('list')[0];
 
 const newEvent = () => {
     if (!+headEl.value || !descEl.value){
-        console.log(headEl.value);
         return false
     }
 
