@@ -3,7 +3,11 @@ const headEl = document.getElementsByClassName('heading')[0];
 const descEl = document.getElementsByClassName('description')[0];
 const toDolist = document.getElementsByClassName('list')[0];
 
-newEvent = () => {
+const newEvent = () => {
+    if (!+headEl.value || !descEl.value){
+        console.log(headEl.value);
+        return false
+    }
 
     const container = document.createElement('li');
     container.classList.add('container');
@@ -20,7 +24,6 @@ newEvent = () => {
     deleteBtn.innerText = 'Удалить';
     deleteBtn.classList.add('deleteBtn');
     deleteBtn.disabled = true;
-    console.dir(deleteBtn)
     deleteBtn.addEventListener('click', () => {
         deleteBtn.parentElement.remove()
     })
